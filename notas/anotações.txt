@@ -1,0 +1,44 @@
+// macro rust = !
+
+// funcao println ----- macro println!
+
+// fn ---- declaração de uma funçao.  ex.: // fn main() {}
+
+// cargo new {nome_do_projeto} --bin ----- criar um novo projeto com o cargo
+
+// cargo build ----- compila o codigo e cria um debug / executavel
+
+// cargo run ---- compila e executa o codigo / cria executavel com a novo codigo
+
+// cargo check ---- verificará rapidamente seu código para garantir que ele seja compilado corretamente ///sem criar um executavel
+
+// use ---- importa uma biblioteca ex. // use std::io  // io == input, output, std == standart
+
+---------------- criar variavel
+
+// let {nome_variavel} = 5;  ----- / em rust todas as variaveis {let} são imutaveis por padrao
+
+// let mut {nome_variavel} = 5 ----- / adicionando 'mut' na variavel tornamos ela mutavel
+
+// podemos mudar a variavel por utilizar somente o let {nome_variavel} 
+
+// nao podemos usar let mut {nome_variavel} para mudar o conteudo dela, gera erro
+
+
+---------------- formatação numerica
+
+// i32 ---- numeros 32bit sem sinal ----- u32 numeros 32bit com sinal ----- i64 numeros 64bit com sinal
+ |
+ |--> 2 tipos de dados
+                |
+                --> escalares: inteiro, float, boolean e strings // char aspas simples " '' " representa um valor unicode
+                               |   i32-16-8 |        |
+                               --> u32-16-8 |        |
+                                            -->f32-64|
+                                                     --> true-false
+
+// tuplas podem ser acessadas por de .(ponto) ex.: let tup = ('pao',5,2.4);  // acessando index 2 // let i = tup.1
+
+// matriz
+    |
+    --> são de tamanho fixo, nao mudam, nao aumenta nem diminui.
