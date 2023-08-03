@@ -74,3 +74,32 @@ ex.: let x = 5;
 // for - laco percore todos os elemetos de uma colecao (.iter()) para interagir com os itens de uma colecao
 
 // .rev() inverte uma colecao ou qualquer lista de numeros passados ex.: 1..4 -- vira 4.
+
+--------- Ownership (posse) --- controle de memoria
+
+// regras  1.Cada valor em Rust possui uma variável que é dita seu owner (sua dona).
+           2.Pode apenas haver um owner por vez.
+           3.Quando o owner sai fora de escopo, o valor será destruído.
+           4.Escopo = { codigo aki dentro }
+
+// O tipo string
+
+// s1 = String::from("textp") aloca 1 espaco na memoria; se s2 = s1 and println!(s1) erro pois o ownership troca para a s2 e s1 se torna invalida
+
+// caso queira copiar explicitamente uma variavel ira custar espaco da memoria sendo assim: ex.: s1 = String::from("texto") ---- s2 = s1.clone() assim teremos 2 espacos alocadso com o mesmo dado
+
+// clone() explicitamente mostra que teremos um custo na memoria do programa
+
+ tipos de copy
+// 
+    Todos os tipos inteiros, como u32.
+    O tipo booleano, bool, com valores true e false.
+    O tipo caractere, char.
+    Todos os tipos de ponto flutuante, como f64.
+    Tuplas, mas apenas aquelas que contém tipos que também são Copy. (i32, i32) é Copy, mas (i32, String) não.
+//
+
+// "&" - referencia para manter a o valor da varaivel no escopo sem tranportala para outro espaco da memoria
+ex.: s1 = String::from("texto"); tamanho = calcula_tamanho(&s1), ai assim poderemos utilizar s1 novamente no escopo~
+
+
