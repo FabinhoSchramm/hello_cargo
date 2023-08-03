@@ -42,3 +42,35 @@
 // matriz
     |
     --> são de tamanho fixo, nao mudam, nao aumenta nem diminui.
+
+--------- funcoes
+
+// nao termina com ";", se adicionar ";" na expressao transforma ela em declaracao e nao retorna o nd
+ex.: let x = 5;
+     let y = {
+        let x = 3;
+        x + 1
+     }
+
+// funcoes com retorno podemos expecificar o tp de dado que sera retornado com ex.:(-> i32)
+
+--------- controle de fluxo : if, else, else if
+
+// < > == !=  // podemos somente utilizar controle de fluxo com apenas o mesmo tipo de datatype ex.: i32 u32 f64
+                                                   let condicao = true  // or false
+// podemos utilizar if em uma declaracao let. ex.: let x = if {condicao} {
+                                                                            5
+                                                                        } else {
+                                                                            6
+                                                                        };
+                                                            println!("o valor de numero eh: {x}")
+
+-------- lacos de repeticao : loop , while e for
+
+// loop - executa o bloco de codigo infinitamente ou ate q vc diga para ele parar (break)
+
+// while - executa o bloco ate a condicao se tornar falsa  -- lento pois adiciona tempo de execucao de verificacao do bloco de codigo
+
+// for - laco percore todos os elemetos de uma colecao (.iter()) para interagir com os itens de uma colecao
+
+// .rev() inverte uma colecao ou qualquer lista de numeros passados ex.: 1..4 -- vira 4.
